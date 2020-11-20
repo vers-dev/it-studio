@@ -1,4 +1,4 @@
-const triggerMenu = document.querySelector(".header-trigger");
+const triggerMenu = document.getElementById("header-trigger");
 const menu = document.querySelector(".header-menu__list");
 
 function show() {

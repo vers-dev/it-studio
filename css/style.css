@@ -639,7 +639,7 @@ create-content {
     margin: 0px auto 20px auto;
   }
   .first{
-    color: black;
+    color: #28231D;
   }
   .second{
     color: white;
@@ -649,7 +649,7 @@ create-content {
   }
   .our-photo__img {
     max-width: 80%;
-    margin: 10px auto;
+    margin: 15px auto;
   }
   .video-movie {
     max-width: 70%;
@@ -669,8 +669,9 @@ create-content {
     margin: auto;
   }
   .work-img{
-    max-width: 80%;
+    width: 80%;
     margin-bottom: 20px;
+    
   }
   .work-text{
     margin: 10px auto;
@@ -682,6 +683,9 @@ create-content {
     grid-template-rows: repeat(1, 50%);
     
   }
+  .work-project-item{
+    padding: 7px;
+  }
   
 }
 @media(max-width:320px){
@@ -689,7 +693,7 @@ create-content {
     font-size: 30px;
   }
   .first{
-    color: black;
+    color: #28231D;
   }
   .second{
     color: white;

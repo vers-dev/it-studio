@@ -54,9 +54,10 @@ a {
 .header {
   height: 100vh;
   background-image: url(../img/annie-spratt-QckxruozjRg-unsplash.jpg);
-  object-fit: cover;
+  object-fit: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-
+  width: 100%;
   color: white;
 }
 .header-dark {
@@ -106,6 +107,9 @@ a {
 /* /Header */
 
 /* Create */
+.create {
+  width: 100%;
+}
 
 .create-btn {
   display: flex;
@@ -185,6 +189,7 @@ create-content {
 /* Work */
 .work {
   background-color: #f6f6f8;
+  width: 100%;
 }
 .work-content {
   display: flex;
@@ -220,9 +225,9 @@ create-content {
   line-height: 20px;
 }
 .work-img {
-  max-width: 500px;
-  height: 400px;
+  width: 40%;
   border-radius: 2.5em;
+  object-fit: cover;
 }
 .work-line {
   margin-bottom: 40px;
@@ -267,6 +272,7 @@ create-content {
 .type {
   background: #e0e0e0;
   position: relative;
+  width: 100%;
 }
 .section-wrapper {
   z-index: 1;
@@ -325,12 +331,14 @@ create-content {
   display: flex;
   flex-direction: column;
   margin-bottom: 90px;
+  justify-content: space-between;
 }
 
 .type-item__img {
   height: 300px;
   border-radius: 1em;
   margin-bottom: 30px;
+  object-fit: cover;
 }
 .type-number-color {
   color: var(--main-color);
@@ -367,6 +375,7 @@ create-content {
 
 .our {
   background-color: #f6f6f8;
+  width: 100%;
 }
 
 .our-content {
@@ -403,6 +412,7 @@ create-content {
   max-width: 20%;
   height: 180px;
   border-radius: 1em;
+  object-fit: cover;
 }
 
 /* /Our */
@@ -410,6 +420,7 @@ create-content {
 /* Video */
 .video {
   position: relative;
+  width: 100%;
 }
 .video-bg {
   position: absolute;
@@ -498,6 +509,7 @@ create-content {
 /* Footer */
 .footer {
   background-color: #e5e5e5;
+  width: 100%;
 }
 
 .footer-content {
@@ -544,15 +556,147 @@ create-content {
   margin-right: 10px;
   width: 20px;
 }
-.fa-angle-down{
+.fa-angle-down {
   font-size: 14px;
   margin-right: 10px;
   width: 20px;
 }
 
-
-.footer-list__link{
+.footer-list__link {
   color: var(--subtitle-color);
 }
 
 /* /Footer */
+
+/* Adaptiv */
+@media (max-width: 1110px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 750px;
+    padding: 0px 15px;
+  }
+  .create-cards {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    align-items: center;
+  }
+  .create-card {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  .create-card__icon {
+    height: 120px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: none;
+  }
+  .type-item__img {
+  }
+}
+@media (max-width: 600px) {
+  .header-title{
+    font-size: 40px;
+  }
+  .header-menu__list{
+    display: none;
+  }
+  .header-trigger{
+    display: inline-block;
+    cursor: pointer;
+    margin: 3px;
+  }
+  .header-trigger i{
+    display: block;
+    display: block;
+    width: 30px;
+    height: 6px;
+    margin: 4px auto;
+    background: #ffffff;
+    
+  }
+  .show{
+    display: block;
+  }
+
+
+
+  .type-header {
+    flex-direction: column;
+  }
+  .type-content {
+    flex-direction: column;
+  }
+  .type-header__title {
+    text-align: center;
+    font-size: 30px;
+  }
+  .type-item {
+    width: 80%;
+    margin: 0px auto 20px auto;
+  }
+  .first{
+    color: black;
+  }
+  .second{
+    color: white;
+  }
+  .our-photo {
+    flex-direction: column;
+  }
+  .our-photo__img {
+    max-width: 80%;
+    margin: 10px auto;
+  }
+  .video-movie {
+    max-width: 70%;
+  }
+  .footer-content {
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+  }
+  .footer-list {
+    width: 80%;
+  }
+  .work-content{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+  }
+  .work-img{
+    max-width: 80%;
+    margin-bottom: 20px;
+  }
+  .work-text{
+    margin: 10px auto;
+    max-width: 100%;
+  }
+  .work-projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 50%);
+    
+  }
+  
+}
+@media(max-width:320px){
+  .type-header__title{
+    font-size: 30px;
+  }
+  .first{
+    color: black;
+  }
+  .second{
+    color: white;
+  }
+}
+
+/* /Adaptiv */

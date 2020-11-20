@@ -13,6 +13,7 @@
       src="https://kit.fontawesome.com/ad70920621.js"
       crossorigin="anonymous"
     ></script>
+    
     <title>Landing</title>
   </head>
   <body>
@@ -27,6 +28,11 @@
           <nav class="header-menu">
             <!-- Список меню -->
 
+            <span id="header-trigger" class="header-trigger">
+              <i></i>
+              <i></i>
+              <i></i>
+            </span>
             <ul class="header-menu__list">
               <li class="header-menu__item">
                 <a href="#" class="header-menu__link">Главная</a>
@@ -38,7 +44,7 @@
                 <a href="#" class="header-menu__link">Услуги</a>
               </li>
               <li class="header-menu__item">
-                <a href="#" class="header-menu__link">Контакты</a>
+                <a href="#" class="header-menu__link">Новости</a>
               </li>
               <li class="header-menu__item">
                 <a href="#" class="header-menu__link">Контакты</a>
@@ -235,11 +241,11 @@
                 alt="img/annie-spratt-QckxruozjRg-unsplash.jpg"
                 class="type-item__img"
               />
-              <h3 class="type-item__title">
+              <h3 class="type-item__title first">
                 <span class="type-number-color">01.</span>Исследование и
                 упаковка
               </h3>
-              <p class="type-item__subtitle">
+              <p class="type-item__subtitle second">
                 Lorem Ipsum - это текст-"рыба", часто используемый в печати и
                 вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для
                 текстов на латинице с начала XVI века.
@@ -384,10 +390,8 @@
     <footer class="footer padding">
       <div class="container">
         <div class="footer-content">
-
           <!-- Футтер список -->
           <ul class="footer-list">
-
             <!-- Футтер айтемы -->
             <h3 class="footer-list__title">Контактная информация</h3>
             <li class="footer-list__item">
@@ -405,12 +409,10 @@
               >
             </li>
             <!-- /Футтер айтемы -->
-
           </ul>
 
           <!-- Футтер список -->
           <ul class="footer-list">
-
             <!-- Футтер айтемы -->
             <h3 class="footer-list__title">Основные ссылки</h3>
             <li class="footer-list__item">
@@ -425,14 +427,12 @@
             <li class="footer-list__item">
               <i class="fas fa-angle-down"></i>Контакты
             </li>
-            
-            <!-- /Футтер айтемы -->
 
+            <!-- /Футтер айтемы -->
           </ul>
 
           <!-- Футтер список -->
           <ul class="footer-list">
-
             <!-- Футтер айтемы -->
             <h3 class="footer-list__title">Наши проекты</h3>
             <li class="footer-list__item">
@@ -448,12 +448,10 @@
               <i class="fas fa-angle-down"></i>ТЭЦ Калининград
             </li>
             <!-- /Футтер айтемы -->
-
           </ul>
 
           <!-- Футтер список -->
           <ul class="footer-list">
-
             <!-- Футтер айтемы -->
             <h3 class="footer-list__title">Социальный сети</h3>
             <li class="footer-list__item">
@@ -469,11 +467,11 @@
               <i class="fas fa-angle-down"></i>Twitter
             </li>
             <!-- /Футтер айтемы -->
-
           </ul>
         </div>
       </div>
     </footer>
     <!-- /Футтер -->
+    <script src="app.js"></script>
   </body>
 </html>

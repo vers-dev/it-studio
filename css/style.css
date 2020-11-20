@@ -614,7 +614,6 @@ create-content {
   }
   .header-trigger i{
     display: block;
-    display: block;
     width: 30px;
     height: 6px;
     margin: 4px auto;
@@ -696,6 +695,25 @@ create-content {
   }
   .second{
     color: white;
+  }
+  .header-menu__list{
+    display: none;
+  }
+  .header-trigger{
+    display: inline-block;
+    cursor: pointer;
+    margin: 3px;
+  }
+  .header-trigger i{
+    display: block;
+    width: 30px;
+    height: 6px;
+    margin: 4px auto;
+    background: #ffffff;
+    
+  }
+  .show{
+    display: block;
   }
 }
 

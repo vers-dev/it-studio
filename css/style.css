@@ -29,6 +29,9 @@ ol {
 a {
   text-decoration: none;
 }
+a:focus{
+  outline: none;
+}
 
 .container {
   max-width: 1110px;
@@ -44,6 +47,9 @@ a {
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
+}
+.button:focus{
+  outline: none;
 }
 .padding {
   padding: 100px 0px;
@@ -492,6 +498,9 @@ create-content {
   padding: 15px 40px;
   border-radius: 3em 0em 0em 3em;
 }
+.video-mail__input:focus{
+  outline: none;
+}
 .video-mail__disc {
   font-style: normal;
   font-weight: normal;
@@ -701,3 +710,31 @@ create-content {
 }
 
 /* /Adaptiv */
+
+/* Cookie */
+.cookie{
+  padding: 40px 0px;
+  position: fixed;
+  bottom: 0;
+  z-index: 10000;
+  width: 100%;
+  background-color: #e5e5e5;
+  box-shadow: 0 0 1px;
+}
+.close{
+  display: none;
+}
+.cookie-content{
+  text-align: right;
+  
+}
+.cookie__btn{
+  text-align: right;
+}
+.cookie__text{
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+/* /Cookie */

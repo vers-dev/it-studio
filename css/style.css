@@ -47,9 +47,15 @@ a:focus{
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
+  transition: all ease 0.4s;
 }
 .button:focus{
   outline: none;
+}
+.button:hover{
+  background-color: white;
+  color: black;
+  box-shadow: 0px 0px 10px;
 }
 .padding {
   padding: 100px 0px;
@@ -72,6 +78,7 @@ a:focus{
 }
 .header-line {
   margin-bottom: 13%;
+  margin-top: 3px;
 }
 .header-menu__list {
   display: flex;
@@ -87,9 +94,11 @@ a:focus{
 .header-menu__link {
   color: white;
   padding: 20px 0px;
+  transition: all ease .2s;
 }
 .header-menu__link:hover {
   border-bottom: 3px solid #fff;
+  color: var(--subtitle-color);
 }
 .header-content {
   display: flex;
@@ -613,6 +622,18 @@ create-content {
   }
   .header-menu__list{
     display: none;
+    position: absolute;
+    background-color: white;
+    z-index: 1000;
+    margin-top: 5px;
+  }
+  .header-menu__link{
+    padding: -10px 0px;
+    color: black;
+    
+  }
+  .header-menu__link:hover{
+    border: none;
   }
   .header-trigger{
     display: inline-block;
